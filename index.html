@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bubble Team</title>
+	<!-- LINK A BOOSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- LINK CSS PROPIO -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- FUENTES GOOGLE -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- LANDING PAGE -->
+	<div class="landing">
+		<div class="landing__aza">
+			<h2 class="landing__titulo">azacarde</h2>
+			<div class="landing__boton">
+				<a class="landing__link" href="#aza"><p>¡Visita mi cv!</p></a>
+			</div>
+			<!-- menu partes cv -->
+			<ul class="landing__nav">
+				<li class="landing__li">
+					<a href="#conoceme-aza"><i class="icon-aza"></i> <p>Conóceme</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#exp-aza"><i class="icon-exp"></i><p>Experiencia</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#habla-aza"><i class="icon-contacto"></i><p>Háblame</p></a>
+				</li>
+			</ul>
+		</div>
+		<div class="landing__eric">
+			<h2 class="landing__titulo">epavon-s</h2>
+			<div class="landing__boton">
+				<a class="landing__link" href="#eric"><p>¡Visita mi cv!</p></a>
+			</div>
+			<!-- menu partes cv -->
+			<ul class="landing__nav">
+				<li class="landing__li">
+					<a href="#conoceme-eric"><i class="icon-eric"></i><p>Conóceme</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#exp-eric"><i class="icon-exp"></i><p>Experiencia</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#habla-eric"><i class="icon-contacto"></i><p>Háblame</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- FIN LANDING PAGE -->
+
+	<!-- CV AZA -->
+	<section class="conoceme" id="aza">
+		<h2 class="conoceme__titulo" id="conoceme-aza">Domadora de perritos salchicha</h2>
+		<h3 class="conoceme__nombre">azacarde</h3>
+		<h3 class="conoceme__cargo">Presidenta de Domadores tm</h3>
+		<div class="conoceme__img"><img src="img/aza_merida.jpeg"></div>
+	</section>
+	<section class="experiencia" id="exp-aza">
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				 Experiencia
+				</button>
+			  </h2>
+			  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+				  He domado a múltiples perritos. En especial perritos salchicha. Aunque a simple vista sus patitas cortas den la sensación de que no son ágiles, usted está equivocado. Pueden saltar muy alto y robar cualquier filete de la encimera de la cocina. Gracias a mmi entrenamiento no le robará nada que no esté a más de un palmo del suelo.
+				</div>
+			  </div>
+			</div>
+			<div class="accordion-item">
+			  <h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  Habilidades
+				</button>
+			  </h2>
+			  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+				  Mi más destacada habilidad en mi campo profesional es tejer jerseys de punto de cualquier estilo para perritos salchicha. Y no sólo jerseys, pues mi producto estrella siempre han sido los patucos de navidad para estos preciosos animales.
+				</div>
+			  </div>
+			</div>
+		  </div>
+	</section>
+	<section class="hablame" id="habla-aza">
+		<ul class="landing__nav">
+			<li class="landing__li">
+				<a href="#"><i class="icon-linkedin"></i><p>linkedin</p></a>
+			</li>
+			<li class="landing__li">
+				<a href="#"><i class="icon-behance"></i><p>behance</p></a>
+			</li>
+			<li class="landing__li">
+				<a href="#"><i class="icon-github"></i><p>github</p></a>
+			</li>
+		</ul>
+	</section>
+	<!-- FIN CV AZA -->
+
+		<!-- CV ERIC -->
+		<section class="conoceme eric" id="eric">
+			<h2 class="conoceme__titulo" id="conoceme-eric">Ojeador de sirenas</h2>
+			<h3 class="conoceme__nombre">epavon-s</h3>
+			<h3 class="conoceme__cargo">Casado con una sirena</h3>
+			<div class="conoceme__img"><img src="img/eric_prince.jpeg"></div>
+		</section>
+		<section class="experiencia eric" id="exp-eric">
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  Experiencia
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  Tengo más de 18 años de experiencia surcando el mar durante largas temporadas en navíos de distintas características, tanto a motor como a vela. Sin embargo, mi experiencia me ha enseñado que los mejores barcos para ojear sirenas son las caravelas por su aspecto romántico.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  Habilidades
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					  Tengo un ojo especial para detectar escamas de colores fantasía, lo cual es muy complicado porque todas las escamas parecen una fantasía en el agua, pero no todas lo son al secarse. Todos estos años de experiencia me han hecho especializarme en este sentido. Mis favoritas son las de mi esposa, que las tiene del color de sus ojos y super brilli-brilli.
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</section>
+		<section class="hablame eric" id="habla-eric">
+			<ul class="landing__nav">
+				<li class="landing__li">
+					<a href="#"><i class="icon-linkedin"></i><p>linkedin</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#"><i class="icon-behance"></i><p>behance</p></a>
+				</li>
+				<li class="landing__li">
+					<a href="#"><i class="icon-github"></i><p>github</p></a>
+				</li>
+			</ul>
+		</section>
+		<!-- FIN CV ERIC -->
+
+	<!-- ENLACE A JAVASCRIPT -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

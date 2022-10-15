@@ -1,0 +1,233 @@
+/* RESET */
+
+h1, h2, h3, h4, h5, h6, p, blockquote {margin: 0;}
+ul {list-style: none; margin: 0; padding: 0;}
+img {max-width: 100%; height: auto; display: block;}
+figure, picture {display: block;}
+input {width: 100%; font-size: 16px; outline: none;}
+a {text-decoration: none;}
+* {box-sizing: border-box;}
+
+/* FUENTE DE ICONOS */
+
+@font-face {
+	font-family: 'tipocv';
+	src:  url('../fonts/tipocv.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  i {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'tipocv' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  }
+  
+  .icon-contacto:before {
+	content: "\e906";
+  }
+  .icon-exp:before {
+	content: "\e9bb";
+  }
+  .icon-aza:before {
+	content: "\e9eb";
+  }
+  .icon-eric:before {
+	content: "\e9f9";
+  }
+  .icon-behance:before {
+	content: "\eaa9";
+  }
+  .icon-github:before {
+	content: "\eab0";
+  }
+  .icon-linkedin:before {
+	content: "\eac9";
+  }
+
+  /*////////////// MI TEMA //////////////*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.landing {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100vh;
+	background-image: url("https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810113.jpg?w=1800&t=st=1665738616~exp=1665739216~hmac=21dd5e67f8ee6ed680adce23a155e5e42b8b5debc633c2d3f2fcb6293ba53a5c");
+}
+
+.landing__aza {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	background-color: rgba(228, 166, 255, 0.5);
+}
+
+.landing__eric {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	background-color: rgba(255, 195, 221, 0.5);
+}
+
+.landing__titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	margin-bottom: 45px;
+}
+
+.landing__boton {
+	display: flex;
+	align-items: flex;
+	width: 225px;
+	border: 4px solid #B4A6FF;
+	border-radius: 25px;
+	margin-bottom: 25px;
+}
+
+.landing__link {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.landing__link > p {
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: black;
+}
+
+.landing__nav {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.landing__li {
+	width: 50px;
+	height: 50px;
+	border: 4px solid #B4A6FF;
+	border-radius: 25px;
+	transition: width 0.1s;
+}
+
+.landing__li > a {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing__li > a > i {
+	font-size: 22px; 
+	line-height: 40px;
+	color: black;
+}
+
+.landing__li > a > p {
+	display: none;
+	padding-left: 25px;
+	color: black;
+}
+
+.landing__boton:hover {
+	background-color: #B4A6FF;
+}
+
+.landing__li:hover > a > p {
+	display: inline-block;
+}
+
+.landing__li:hover {
+	width: 170px;
+	background-color: #B4A6FF;
+	transition: width 0.1s;
+}
+
+.conoceme, .experiencia, .hablame {
+	width: 100%;
+	background-color: rgba(228, 166, 255, 0.5);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.conoceme__titulo {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+}
+
+.conoceme__nombre, .conoceme__cargo {text-align: center;}
+
+.conoceme__cargo {margin-bottom: 40px;}
+
+.conoceme {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.conoceme__img {
+	display: flex;
+	width: 300px;
+	height: 300px;
+}
+
+.conoceme__img > img {
+	object-fit: cover;
+	border-radius: 100%;
+	border: 4px solid #B4A6FF;
+}
+
+.accordion {
+	max-width: 900px;
+	margin: auto;
+}
+
+.accordion-item {
+	border: none;
+}
+
+.accordion-header {
+	background-color: #B4A6FF;
+}
+
+.accordion-button {
+	background-color: transparent;
+}
+
+.accordion-body {
+	background-color: rgba(228, 166, 255, 0.5);
+	border: 1px solid #B4A6FF;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: transparent;
+	color: black;
+}
+
+.accordion-button:focus {
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.hablame {
+	display: flex;
+	justify-content: center;
+}
+
+.eric {background-color: rgba(255, 195, 221, 0.5);}
